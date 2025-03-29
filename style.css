@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+:root{
+    --corDominante: #DADADA;
+    --corSecundaria: #1E3A5F;
+    --corDestaqueUm: #7A9E9F;
+    --corDestaqueDois: #A64B38;
+    --corDestaqueTres: #E0A899;
+    --colorFont: #2C2C2C;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background: var(--corDominante);
+    color: var(--corSecundaria);
+    width: 100%;
+    height: 100vh;
+}
+
+/* Definindo as configurações de títulos e paragrafo */
+header{
+    background-color: var(--corSecundaria);
+}
+
+h1{
+    color: var(--corDominante);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2{
+    color: var(--black-800);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    /* border: solid seagreen; */
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 0.5rem 0;
+    width: 100%;
+    /* border: solid skyblue; */
+}
+
+/* CSS página index */
+
+#header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#menu{
+    width: 15%;
+}
+
+#menuLista{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: var(--corDominante);
+    font-size: 1.5rem;
+}
+
+
+#about{
+    padding: 6rem 6rem 0rem 6rem;
+    /* border: solid khaki; */
+}
+
+#aboutH2{
+    padding: 0rem 0rem 1.5rem 0rem;
+}
+
+#conteudo{
+    /* border: solid saddlebrown; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#aboutImg{
+    width: 25%;
+    height: 25%;
+    border-radius: 10%;
+    border: solid var(--corSecundaria);
+}
+
+#sobre_texto{
+    width: auto;
+    /* border: solid sandybrown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video{
+    padding: 3rem 6rem 6rem 6rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 3rem;
+}
+
+#videoTexto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+#videoTextoParagrafo{
+    padding: 0rem 0rem 0.5rem 0rem;
+}
+
+#videoH2{
+    padding: 0rem 0rem 1.5rem;
+}
+
+iframe{
+    border-radius: 50px;
+    border: solid var(--corSecundaria);
+    
+
+}
+
+footer{
+    background-color: var(--corSecundaria);
+    color: var(--corDominante);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+footer section{
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+}
+
+footer a{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer img{
+    filter: invert(100%);
+    width: 3rem;
+}
+
+footer h3{
+    padding: 0rem 1.5rem 0rem 0rem;
+    font-weight: 700;
+}
+
+main {
+    
+}
