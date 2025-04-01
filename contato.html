@@ -7,7 +7,7 @@
 		<meta name="author" content="Generation Brasil">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
 		<title>Meu Perfil</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="/css/contato.css">
 	</head>
 	<body>
 
@@ -46,28 +46,7 @@
 			<!-- Seção Formulário de Contato e Redes Sociais -->
             <section id="contact">
 
-                <!-- Seção do Formulário -->
-                <form action="#" method="submit" id="formulario">
-                    <label id="labelName" for="name">Nome: </label>
-                    <input id="name" type="text" name="name" placeholder="Digite seu nome">
-                    <span id="textNome"></span>
-
-                    <label id="labelEmail" for="email">E-mail: </label>
-                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail">
-                    <span id="textNome"></span>
-
-                    <label id="labelSubject" for="subject">Assunto: </label>
-                    <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem">
-                    <span id="textNome"></span>
-
-                    <label id="labelMessage" for="message">Mensagem: </label>
-                    <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-
-                <!-- Seção do Google Maps -->
-                <article id="mapa">
+				<article id="mapa">
 	
                     <p>Av. Paulista, 100</p>
                     <p>São Paulo - SP</p>
@@ -81,12 +60,33 @@
                         allowfullscreen=""
                         aria-hidden="false"
                         tabindex="0"
-                        id="mapa"
+                        id="mapaGoogle"
                         >
                     </iframe>
                 
                 </article>
-                
+                <!-- Seção do Formulário -->
+                <form action="#" method="submit" id="formulario">
+                    <label id="labelName" for="name">Nome: </label>
+                    <input id="name" type="text" name="name" placeholder="Digite seu nome">
+                    <span id="textNome"></span>
+
+                    <label id="labelEmail" for="email">E-mail: </label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail">
+                    <span id="textEmail"></span>
+
+                    <label id="labelSubject" for="subject">Assunto: </label>
+                    <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem">
+                    <span id="textSubject"></span>
+
+                    <label id="labelMessage" for="message">Mensagem: </label>
+                    <textarea id="message" name="message" placeholder="Digite sua mensagem" style="resize: none"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <!-- Seção do Google Maps -->
+
             </section>
 
 		</main>
@@ -97,22 +97,23 @@
 			<!-- Seção de Contato - Redes Sociais -->
             <section id="redes_sociais">
 
-                    <a href="">
-                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-                    </a>
-                    <a href="">
-                        <img src="assets/img/github.svg" alt="Github" />
-                    </a>
-                    <a href="">
-                        <img src="assets/img/instagram.svg" alt="Instagram" />
-                    </a>
+                <a href="www.linkedin.com/in/gabrielly-dev">
+                    <img class="social_icon" src="assets/img/linkedin.svg" alt="Linkedin">
+                </a>
+                <a  href="https://github.com/gabrielly-dev">
+                    <img class="social_icon" src="assets/img/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/gabrielly.dev/">
+                    <img class="social_icon" src="assets/img/instagram.svg" alt="Instagram">
+                </a>
 
             </section>
 
 			<h3>
-				Feito com 🧡 por Generation Brasil - 2024
+				Feito com 🧡 por Gabrielly Barbosa Silva
 			</h3>
 
 		</footer>
+		<script src="./assets/js/scripts.js"></script>
 	</body>
 </html>

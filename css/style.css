@@ -6,7 +6,6 @@
     outline: none;
     font-weight: 400;
     font-family: sans-serif;
-    overflow: hidden;
 }
 
 :root{
@@ -19,7 +18,7 @@
 }
 
 html, body {
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -40,8 +39,9 @@ h1{
 h2{
     color: var(--black-800);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
+    color: var(--corSecundaria);
     /* border: solid seagreen; */
 }
 
@@ -51,10 +51,11 @@ p{
     text-align: justify;
     padding: 0.5rem 0;
     width: 100%;
+    color: var(--colorFont);
     /* border: solid skyblue; */
 }
 
-/* CSS página index */
+
 
 #header_content{
     display: flex;
@@ -79,13 +80,50 @@ a{
     font-size: 1.5rem;
 }
 
+a:hover{
+    color: var(--corDestaqueDois);
+}
 
-#about{
-    padding: 3rem 3rem 0rem 3rem;
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 3rem 3rem 3rem;
+    
 }
 
 #aboutH2{
     padding: 0rem 0rem 1.5rem 0rem;
+}
+
+#voluntariado{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#imgVoluntario{
+    width: 15vw;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 40px;
+    border: solid var(--corSecundaria);
+}
+
+#galena{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+#imgGalena{
+    width: 25vw;
+    height: 100%;
+    object-fit: contain;
+    border: solid var(--corSecundaria);
+    border-radius: 40px;
 }
 
 #conteudo{
@@ -98,8 +136,11 @@ a{
 
 #aboutImg{
     width: 15vw;
-    border-radius: 10%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 40px;
     border: solid var(--corSecundaria);
+    
 }
 
 #sobre_texto{
@@ -112,19 +153,20 @@ a{
 }
 
 #video{
-    padding: 3rem 3rem 3rem 3rem;
+    padding: 3rem 0rem 3rem 0rem;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: auto;
     gap: 3rem;
+    align-items: center;
 }
 
 #videoTexto{
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: center;
     height: 100%;
 }
 
@@ -146,6 +188,7 @@ iframe{
 
 span{
     font-weight: 700;
+    color: var(--corDestaqueDois);
 }
 
 footer{
@@ -181,39 +224,15 @@ footer h3{
     font-weight: 700;
 }
 
-/* pagina de contato */
 
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-#contact{
-    display: flex;
-    gap: 5vw;
-    align-items: center;
-    height: 100%;
-    justify-content: center;
-}
-
-#formulario{
-    display: flex;
-    flex-direction: column;
-
-}
-
-label{
-    font-size: 1.5rem;
-}
-
-input{
-    font-size: 1rem;
+.social_icon {
+    width: 3rem;
     height: 3rem;
-    padding: 1rem;
-    width: 15vw;
-    border: solid var(--corSecundaria);
-    border-radius: 12px;
+    filter: invert(100%)
 }
 
+.social_icon:hover{  
+    filter: invert(30%) sepia(80%) saturate(600%) hue-rotate(350deg) brightness(90%) contrast(100%);
+
+}
