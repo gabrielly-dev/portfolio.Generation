@@ -81,7 +81,7 @@ a{
 }
 
 a:hover{
-    color: var(--corDestaqueDois);
+    color: var(--corDestaqueTres);
 }
 
 main {
@@ -233,6 +233,5 @@ footer h3{
 }
 
 .social_icon:hover{  
-    filter: invert(30%) sepia(80%) saturate(600%) hue-rotate(350deg) brightness(90%) contrast(100%);
-
+    filter: invert(80%) sepia(50%) saturate(300%) hue-rotate(330deg) brightness(95%) contrast(90%);
 }
